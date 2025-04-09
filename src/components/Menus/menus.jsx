@@ -1,6 +1,6 @@
 import React from "react";
 import "./menu.css";
-import Zoom from "react-reveal/Zoom";
+import {Zoom} from "react-awesome-reveal";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-scroll";//Scroll effect
 import { FcHome } from "react-icons/fc";

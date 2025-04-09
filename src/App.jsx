@@ -8,7 +8,7 @@ import Techstack from "./pages/TechStack/Techstack";
 import Workexp from "./pages/WorkExp/Workexp";
 import ScrollToTop from "react-scroll-to-top";//Scroll to top button
 import { useTheme } from "./context/ThemeContext";
-import Tada from "react-reveal/Tada";
+import { AttentionSeeker } from "react-awesome-reveal";
 import Learning from "./pages/LearningJourney/Learning";
 import Interest from "./pages/Interest/Interest";
 import MobileNav from "./components/MobileNav/MobileNav";
@@ -33,10 +33,10 @@ function App() {
           <Contacts />
         </div>
         <footer className="footer">
-          <Tada>
+          <AttentionSeeker effect="tada">
             <p>Made with ❤️ by Subhadeep Mukherjee</p>
             <p>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
-          </Tada>
+          </AttentionSeeker>
         </footer>
       </div>
       <ScrollToTop
