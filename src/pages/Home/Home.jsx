@@ -7,6 +7,8 @@ import Resume from "../../assets/docs/My best Resume.pdf";
 // import { BsMoonStarsFill } from "react-icons/bs";
 // import { FaSun } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
+
+import StarsBg from "../../assets/images/stars.png";
 const Home = () => {
   // const [theme, setTheme] = useTheme();
   //Handle Theme
