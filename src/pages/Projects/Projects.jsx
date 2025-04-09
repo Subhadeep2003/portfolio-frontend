@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import Spin from "react-reveal/Spin";
 const projects = [
   {
     title: "WonderList Hotel Booking Website",
@@ -46,7 +45,7 @@ const Projects = () => {
       {/* Card Design */}
       <div className="row gy-4">
         {projects.map((project, index) => (
-                <Spin>
+
             <div key={index} className="col-md-4">
               <div className="card project-card">
                 <span className="card-category">{project.category}</span>
@@ -73,7 +72,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            </Spin>
+
         ))}
       </div>
     </div>
