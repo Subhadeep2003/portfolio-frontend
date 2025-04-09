@@ -1,0 +1,68 @@
+.education {
+    margin: 50px;
+    margin-left: 140px;
+    background-color: rgba(0, 176, 111, 0.612); /* Light green shade */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.education hr {
+    color: #00a86b;
+    width: 400px;
+    margin: 10px auto;
+    border: 2px solid #00a86b;
+}
+
+.education h2 {
+    font-weight: bold;
+    color: #014136;
+    font-size: 28px;
+}
+
+.education .vertical-timeline-element-title {
+    color: #00a86b;
+    font-weight: bold;
+}
+
+.education .vertical-timeline-element-subtitle {
+    color: #1e1e2c;
+    font-weight: 500;
+}
+
+.education .marks {
+    font-size: 16px;
+    font-weight: bold;
+    color: #004d40;
+    margin-top: 10px;
+}
+
+.education .marks span {
+    color: #ff5733;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vertical-timeline-element {
+    transition: transform 0.3s ease-in-out;
+}
+
+.vertical-timeline-element:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width:600px){
+    .education{
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .education h2{
+        padding-top: 20px;
+    }
+    .education hr{
+        width: 280px;
+        margin-bottom: 10px;
+    }
+}

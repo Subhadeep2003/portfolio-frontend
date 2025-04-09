@@ -1,0 +1,41 @@
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Dark Mode*/
+:root {
+  --primary-bg: #ffffff;
+  --primary-text: #333333;
+}
+
+[data-theme="dark"] {
+  --primary-bg: #121212;
+  --primary-text: #ffffff;
+  background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+}
+
+[data-theme="light"] {
+  --primary-bg: #f4f4f4;
+  --primary-text: #222222;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.theme-btn {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}

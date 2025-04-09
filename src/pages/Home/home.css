@@ -1,0 +1,206 @@
+/* General Setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  color: white;
+  overflow-x: hidden;
+}
+/* Home Container */
+.home-container {
+  margin-left: 130px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Avatar Glow Circle */
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.avatar-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 360px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(173, 216, 230, 0.8),
+    rgba(173, 216, 230, 0.1)
+  );
+  box-shadow: 0 0 80px 20px rgba(173, 216, 230, 0.8),
+    0 0 120px 40px rgba(173, 216, 230, 0.5),
+    0 0 160px 80px rgba(173, 216, 230, 0.3),
+    0 0 220px 100px rgba(173, 216, 230, 0.2),
+    inset 0 0 60px rgba(255, 255, 255, 0.9);
+  filter: blur(0.5px);
+  z-index: 0;
+  animation: pulse-ring 3s ease-in-out infinite,
+    color-pulse 6s ease-in-out infinite;
+}
+@keyframes pulse-ring {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+}
+@keyframes color-pulse {
+  0% {
+    box-shadow: 0 0 80px 20px rgba(0, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 80px 20px rgba(0, 128, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 80px 20px rgba(0, 255, 255, 0.8);
+  }
+}
+
+.avatar-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  border-radius: 0;
+  /* Remove circular crop */
+}
+
+/* Starry Background (optional) */
+.home-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("D:\MERN-Personal Portfolio\portfolio\public\stars.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Content Box */
+.home-content {
+  max-width: 800px;
+}
+
+/* Title and Highlight */
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/* Highlighted Name */
+.home-content .highlight {
+  color: #16d6f8;
+}
+
+/* Typewriter Effect Styling */
+.home-content h1 {
+  font-size: 2rem;
+  color: #5c7aff;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.home-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #f5f5f5; /* much brighter */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button Container */
+.home-buttons {
+  margin-top: 20px;
+}
+
+/* Buttons Styling */
+.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 0 10px;
+}
+
+/* Hire Me Button */
+.btn-hire {
+  background: linear-gradient(90deg, #3b8ff3, #3a64f2);
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-hire:hover {
+  background: white;
+  color: #3a64f2;
+  box-shadow: 0px 0px 10px rgba(59, 143, 243, 0.8);
+}
+
+/* Resume Button */
+.btn-cv {
+  background: linear-gradient(90deg, #f29f67, #f25c67);
+  color: white;
+}
+
+.btn-cv:hover {
+  background: white;
+  color: #f25c67;
+  box-shadow: 0px 0px 10px rgba(242, 159, 103, 0.8);
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+  }
+  .home-container h2 {
+    font-size: 24px;
+  }
+  .home-container h1 {
+    font-size: 24px;
+  }
+  .avatar-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .avatar-container::before {
+    width: 300px;
+    height: 300px;
+    filter: blur(12px);
+  }
+}

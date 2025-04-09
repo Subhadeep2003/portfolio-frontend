@@ -1,0 +1,98 @@
+/* Background Styling */
+.project {
+  color: white;
+  background: linear-gradient(135deg, #5555cf 30%, #ff6f61 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 50px;
+    margin-left: 90px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  .heading {
+    color: black;
+  }
+  .heading hr{
+    color: black;
+  }
+  /* Card Styling */
+  .project-card {
+    background-color: #0b132b;
+    color: #5c7aff;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  /* Hover Effect */
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(50, 50, 93, 0.4) 0px 60px 110px -30px, 
+                rgba(0, 0, 0, 0.4) 0px 35px 70px -40px, 
+                rgba(10, 37, 64, 0.45) 0px -2px 8px 0px inset;
+  }
+  
+  /* Image */
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Category Label */
+  .card-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  /* Tags */
+  .tag-badge {
+    background-color: #ff5722;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+  }
+  
+  /* Button */
+  .btn-primary {
+    background-color: #1baea7;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: white;
+    color:  #138781;
+    background: transparent;
+    border: 2px solid  #138781;
+    transition: all 0.3s ease;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  }
+
+  @media(max-width:600px){
+    .project{
+      margin: 0;
+      padding: 0;
+      margin-top: 50px;
+    }
+    .project h2{
+      padding-top: 20px;
+    }
+    .project hr{
+      width: 280px;
+    }
+    .project .card{
+      margin-top: 30px;
+
+    }
+  }
+  
