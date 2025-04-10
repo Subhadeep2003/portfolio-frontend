@@ -7,7 +7,7 @@ const projects = [
       "https://qrologic.com/images/Hotel-Bookings.jpg",
     tags: ["Node", "Express", "React", "MongoDB"],
     category: "Full Stack",
-    link: "https://github.com/Subhadeep2003/Wanderlist-WebDev-Project",
+    link: " https://wanderlist-webdev-project.onrender.com",
   },
   {
     title: "Stock Trading Platform",
