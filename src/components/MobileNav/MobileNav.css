@@ -10,6 +10,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtle depth */
     border-radius: 12px; /* optional rounded look */
     padding: 1rem;
+    overflow-x: hidden;
   }
 /* Header styling */
 .mobile-nav-header {
