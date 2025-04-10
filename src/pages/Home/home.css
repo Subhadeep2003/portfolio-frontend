@@ -203,4 +203,17 @@ body {
     height: 300px;
     filter: blur(6px);
   }
+  .home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-buttons button {
+    width: 80%;
+    font-size: 14px;
+  }
 }

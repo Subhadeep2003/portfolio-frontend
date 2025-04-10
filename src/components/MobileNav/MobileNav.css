@@ -10,7 +10,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtle depth */
     border-radius: 12px; /* optional rounded look */
     padding: 1rem;
-    overflow-x: hidden;
   }
 /* Header styling */
 .mobile-nav-header {
@@ -36,7 +35,7 @@
     background-color: transparent;
     padding: 10px 20px;
     border-top: 1px solid #333;
-    animation: slideDown 0.7s ease-in-out;
+    animation: slideDown 0.5s ease-in-out;
   }
   @keyframes slideDown {
     from {
@@ -69,6 +68,7 @@
 @media(min-width:600px){
     .mobile-nav{
         display: none;
+        overflow-x: hidden;
     }
     
 }
