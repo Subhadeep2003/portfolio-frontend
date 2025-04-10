@@ -201,6 +201,6 @@ body {
   .avatar-container::before {
     width: 300px;
     height: 300px;
-    filter: blur(12px);
+    filter: blur(6px);
   }
 }

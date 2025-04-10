@@ -1,16 +1,24 @@
-.mobile-nav{
-    overflow: hidden;
-    position: fixed;
-    top:0;
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1;
-}
-.mobile-nav-header{
+    z-index: 9999; /* Ensure it's on top of everything */
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    backdrop-filter: blur(10px);   /* gives a frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtle depth */
+    border-radius: 12px; /* optional rounded look */
+    padding: 1rem;
+  }
+/* Header styling */
+.mobile-nav-header {
     height: 50px;
-    width: 100%;
-    background-color: #1e1e1e;
-    padding: 8px;
-}
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+  }
 .mobile-nav-header .mobile-nav-icon{
     color: white;
     cursor: pointer;
@@ -19,18 +27,43 @@
     margin-left: 20px;
     color: #f29f67;
     text-transform: capitalize;
-    vertical-align: middle;
     font-size: 20px;
 }
-
-.mobile-nav-menu .nav-items{
-    height: auto;
-    width: 200px;
-    background-color: #1e1e1e;
-    padding: 10px;
-    padding-bottom: 20px;
-    border-bottom-right-radius: 10px;
-}
+/* Menu section */
+.mobile-nav-menu {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-top: 1px solid #333;
+    animation: slideDown 0.7s ease-in-out;
+  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-link a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .nav-link a:hover {
+    color: #f29f67;
+  }
 
 @media(min-width:600px){
     .mobile-nav{
