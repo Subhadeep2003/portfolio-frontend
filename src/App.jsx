@@ -34,7 +34,7 @@ function App() {
         </div>
         <footer className="footer">
           <AttentionSeeker effect="tada">
-            <p>Made with ❤️ by Subhadeep Mukherjee</p>
+            <p>Made by Subhadeep Mukherjee</p>
             <p>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
           </AttentionSeeker>
         </footer>
